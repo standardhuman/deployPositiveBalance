@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import ActivityCRUD from "./activitycrud";
 
 export default class App extends React.Component {
-  render () {
+  render() {
     return (
       <div>
-        <h1>Change me</h1>
+        <ActivityCRUD />
+        {this.props.children}
       </div>
-    )
+    );
   }
 }

@@ -5,11 +5,13 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "depository": "https://github.com/standardhuman/deployPositiveBalance",
-  "engines" : {
-      "node" : "*" },
+  "repository": "https://github.com/standardhuman/deployPositiveBalance.git",
+  "engines": {
+    "node": "*"
+  },
   "dependencies": {
     "express": "^4.13.4",
+    "pg": "6.1.2",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
   },
