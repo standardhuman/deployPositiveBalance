@@ -3,7 +3,7 @@ const port = (process.env.PORT || 8080)
 const app = Server.app()
 const pg = require('pg');
 
-pg.defaults.ssl = true;
+pg.defaults.ssl = false;
 pg.connect(process.env.DATABASE_URL, function(err, client) {
   if (err) throw err;
   console.log('Connected to postgres! Getting schemas...');
