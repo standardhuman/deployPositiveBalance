@@ -41,7 +41,7 @@ export default class ActivityCRUD extends React.Component {
   }
 
   componentWillMount() {
-    fetch('http://localhost:3000/api/activities', {
+    fetch('https://tribal-environs-144817.appspot.com/api/activities', {
   	method: 'get'
       }).then((response) => {
         response.json().then((message) => {
