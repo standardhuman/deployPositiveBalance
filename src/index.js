@@ -18,7 +18,6 @@ app.get('/db', function (request, response) {
 });
 
 pg.defaults.ssl = true;
-
 pg.connect(process.env.DATABASE_URL, function(err, client) {
   if (err) throw err;
   console.log('Connected to postgres! Getting schemas...');
